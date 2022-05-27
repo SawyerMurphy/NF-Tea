@@ -17,10 +17,46 @@
         </div>
         <h1 class="orderNowTitle">Order Now</h1>
         <div class="orderNowOptions">
+            <p>Please select an option.</p>
             <input type="radio" id="takeout" value="takeout" name="tOrD"/>
             <label for="takeOut">Takeout</label>
             <input type="radio" id="delivery" value="delivery" name="tOrD"/>
             <label for="delivery">Delivery</label>
+        </div>
+        <div class="orderForm">
+            <br /> <p>Please enter all the required information below to complete a NF-Tea Order!</p>
+            <form action="actions.php" method="post">
+                <div>
+                    <label>
+                        Order: <input type="text" id="order" name="order" size="75px"></input> <br />
+                    </label>
+                    <label>
+                        First Name:  <input type="text" id="fname" name="fname"></input>
+                    </label>
+                    <label>
+                        Last Name: <input type="text" id="lname" name="lname"></input> <br/>
+                    </label>
+                    <label>
+                        House Number: <input type="text" id="houseNo" name="houseNo"></input>
+                    </label>
+                    <label>
+                        Street: <input type="text" id="street" name="street"></input> <br/>
+                    </label>
+                    <label>
+                        Credit Card Number: <input type="text" id="ccNo" name="ccNo"></input>
+                    </label>
+                    <label>
+                        Credit Card Code: <input type="text" id="ccCode" name="ccCode" maxlength="3"></input> <br />
+                    </label>
+                    <label>
+                        Expiry Month: <input type="text" id="ccMonth" name="ccMonth" maxlength="2"></input>
+                    </label>
+                    <label>
+                        Expiry Year: <input type="text" id="ccYear" name="ccYear" maxlength="4"></input> <br />
+                    </label>
+                    <input type="submit" id="orderSubmit" name="orderSubmit"/>
+                </div>
+            </form>
         </div>
     </body>
 </html>
