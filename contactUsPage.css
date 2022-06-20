@@ -1,0 +1,69 @@
+.navBar{
+    padding-right: 5%;
+    display: block;
+    padding: 8px;
+    color:white;
+    text-align:right;
+    background: #DCBEF9;
+    background: -webkit-linear-gradient(top left, #DCBEF9, #CFACEF);
+    background: -moz-linear-gradient(top left, #DCBEF9, #CFACEF);
+    background: linear-gradient(to bottom right, #DCBEF9, #CFACEF);
+}
+
+form {
+    width: 600px;
+    overflow: hidden;
+    margin-left: 25px;
+    line-height: 30px;
+}
+
+label {
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+}
+
+input {
+    display: block;
+}
+
+.appSubmit {
+    margin-top: 20px;
+}
+
+p {
+    margin-left: 25px;
+}
+
+img {
+    margin-left: 25px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.calendarIcon {
+    margin-left: 275px;
+}
+
+.hoursTitles {
+    margin-left: 212px;
+}
+
+.hours {
+    margin-left: 180px;
+}
+
+footer {
+    height: 30px;
+    text-align: center;
+    background: #DCBEF9;
+    background: -webkit-linear-gradient(top left, #DCBEF9, #CFACEF);
+    background: -moz-linear-gradient(top left, #DCBEF9, #CFACEF);
+    background: linear-gradient(to bottom right, #DCBEF9, #CFACEF);
+}
+
+.footerLinks {
+    display: inline-block;
+}
