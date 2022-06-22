@@ -1,13 +1,40 @@
 .navBar{
-    padding-right: 5%;
+    height: fit-content;
     display: block;
+    overflow: hidden;
     padding: 8px;
     color:white;
-    text-align:right;
     background: #DCBEF9;
     background: -webkit-linear-gradient(top left, #DCBEF9, #CFACEF);
     background: -moz-linear-gradient(top left, #DCBEF9, #CFACEF);
     background: linear-gradient(to bottom right, #DCBEF9, #CFACEF);
+}
+
+.link {
+    white-space: nowrap;
+    float: left;
+    padding: 0px 50px;
+}
+
+.links {
+    font-size: larger;
+    padding: 70px 0px;
+}
+
+.div {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    padding-top: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 p {
@@ -46,4 +73,9 @@ label {
 
 h4 {
     margin-left: 25px;
+}
+
+.logo {
+    float: left;
+    padding-left: 20px;
 }
