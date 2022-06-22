@@ -2,25 +2,77 @@
     PUBLIC  "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>NF-Tea</title>
-        <link rel="stylesheet" href="styles.css" type="text/css"/>
-    </head>
-    <body>
-        <div class="navBar">
-            <a href="#">Home</a>
-            <a href="menuPage.xhtml">Menu</a>
-            <a href="orderNowPage.xhtml">Order Now</a>
-            <a href="locationsPage.xhtml">Locations</a>
-            <a href="aboutUsPage.xhtml">About Us</a>
-            <a href="contactUsPage.xhtml">Contact Us</a>
+
+<head>
+    <title>NF-Tea</title>
+    <link rel="stylesheet" href="homePage.css" type="text/css" />
+</head>
+
+<body>
+    <!--Nav Bar-->
+    <div class="navBar">
+        <div class="logo">
+            <a href="homePage.xhtml"><img src="nfTeaMeme.svg" alt="Meme" style="width: 300px"></img>
+            </a>
         </div>
+        <div class="links">
+            <a class="link" href="homePage.xhtml">Home</a>
+            <a class="link" href="menuPage.xhtml">Menu</a>
+            <a class="link" href="orderNowPage.xhtml">Order Now</a>
+            <a class="link" href="locationsPage.xhtml">Locations</a>
+            <a class="link" href="aboutUsPage.xhtml">About Us</a>
+            <a class="link" href="contactUsPage.xhtml">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <!--Image-->
+        <div class="headerImage">
+            <img src="TeaShop.jpg" style="width: 100%;" />
+        </div>
+        <!--Intro-->
         <h1 class="nfteaTitle">NF-TEA</h1>
         <div class="homePageIntro">
-            <p>Welcome to the newest and coolest bubble tea chain! Mixing cutting edge technology with a classic drink to bring 
-                our customers a bubble tea experience unique to them. Order using our app and link your wallet, and we can customize your drinks lid,
-                apply dicounts, and even print custom messages. Sit down, relax, and <a href="orderNowPage.xhtml">enjoy some NF-Tea</a>
+            <p>Welcome to the newest and coolest bubble tea chain! Mixing cutting edge technology with a classic drink to bring our customers a bubble tea experience unique to them. Order using our app and link your wallet, and we can customize your drinks
+                lid, apply dicounts, and even print custom messages. Sit down, relax, and <a href="orderNowPage.xhtml">enjoy some NF-Tea</a>
             </p>
         </div>
-    </body>
+        <!--Featured NFTs-->
+        <div class="featuredNFT">
+            <h1 class="featuredTitle">Featured NFT's</h1>
+            <div class="card">
+                <img class="NFT-Logo" src="bitcoin.png" alt="Avatar" />
+                <div class="container">
+                    <h4><b>Bitcoin</b></h4>
+                    <p>10% Discount</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="NFT-Logo" src="DOGE.png" alt="Avatar" />
+                <div class="container">
+                    <h4><b>Doge Coin</b></h4>
+                    <p>2% Discount</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="NFT-Logo" src="R2-TEA2.png" alt="Avatar" style="width: 400px;" />
+                <div class="container">
+                    <h4><b>NF-Tea</b></h4>
+                    <p>50% Discount</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Footer-->
+    <footer>
+        <a class="footerLinks" href="#">Hours</a>
+        <a class="footerLinks" href="#">Contact Us</a>
+        <a class="footerLinks" href="#">Social Media</a>
+    </footer>
+
+</body>
+
 </html>
