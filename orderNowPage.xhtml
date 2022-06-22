@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>NF-Tea</title>
-        <link rel="stylesheet" href="styles.css" type="text/css"/>
+        <link rel="stylesheet" href="orderNowPage.css" type="text/css"/>
     </head>
     <body>
         <div class="navBar">
@@ -18,18 +18,19 @@
         <h1 class="orderNowTitle">Order Now</h1>
         <div class="orderNowOptions">
             <p>Please select an option.</p>
-            <input type="radio" id="takeout" value="takeout" name="tOrD"/>
+            <input class="radioBtn" type="radio" id="takeout" value="takeout" name="tOrD"/>
             <label for="takeOut">Takeout</label>
-            <input type="radio" id="delivery" value="delivery" name="tOrD"/>
+            <input class="radioBtn" type="radio" id="delivery" value="delivery" name="tOrD"/>
             <label for="delivery">Delivery</label>
         </div>
         <div class="orderForm">
-            <br /> <p>Please enter all the required information below to complete a NF-Tea Order!</p>
+            <br /> <p>Please enter all the required information below to complete your NF-Tea Order!</p>
+            <p> Order: <br/>
+                - Items will be listed here based on what you selected in the Menu page! <br/>
+            </p>
+            <h4>Total: $0.00</h4>
             <form action="actions.php" method="post">
                 <div>
-                    <label>
-                        Order: <input type="text" id="order" name="order" size="75px"></input> <br />
-                    </label>
                     <label>
                         First Name:  <input type="text" id="fname" name="fname"></input>
                     </label>
@@ -53,10 +54,15 @@
                     </label>
                     <label>
                         Expiry Year: <input type="text" id="ccYear" name="ccYear" maxlength="4"></input> <br />
-                    </label>
+                    </label> <br/> <br/>
                     <input type="submit" id="orderSubmit" name="orderSubmit"/>
                 </div>
             </form>
-        </div>
+        </div> <br/>
+        <footer>
+            <a class="footerLinks" href="contactUsPage.xhtml">Hours</a>
+            <a class="footerLinks" href="contactUsPage.xhtml">Contact Us</a>
+            <a class="footerLinks" href="contactUsPage.xhtml">Social Media</a>
+        </footer>
     </body>
 </html>

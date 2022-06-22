@@ -1,0 +1,49 @@
+.navBar{
+    padding-right: 5%;
+    display: block;
+    padding: 8px;
+    color:white;
+    text-align:right;
+    background: #DCBEF9;
+    background: -webkit-linear-gradient(top left, #DCBEF9, #CFACEF);
+    background: -moz-linear-gradient(top left, #DCBEF9, #CFACEF);
+    background: linear-gradient(to bottom right, #DCBEF9, #CFACEF);
+}
+
+p {
+    margin-left: 25px;
+}
+
+footer {
+    height: 30px;
+    text-align: center;
+    background: #DCBEF9;
+    background: -webkit-linear-gradient(top left, #DCBEF9, #CFACEF);
+    background: -moz-linear-gradient(top left, #DCBEF9, #CFACEF);
+    background: linear-gradient(to bottom right, #DCBEF9, #CFACEF);
+}
+
+.footerLinks {
+    display: inline-block;
+}
+
+.radioBtn {
+    margin-left: 25px;
+}
+
+form {
+    width: 600px;
+    overflow: hidden;
+    margin-left: 25px;
+    line-height: 30px;
+}
+
+label {
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+}
+
+h4 {
+    margin-left: 25px;
+}
