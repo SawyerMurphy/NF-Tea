@@ -1,0 +1,69 @@
+.navBar{
+    padding-right: 5%;
+    display: block;
+    padding: 8px;
+    color:white;
+    text-align:right;
+    background: #DCBEF9;
+    background: -webkit-linear-gradient(top left, #DCBEF9, #CFACEF);
+    background: -moz-linear-gradient(top left, #DCBEF9, #CFACEF);
+    background: linear-gradient(to bottom right, #DCBEF9, #CFACEF);
+}
+
+.menuSearchBarText {
+    text-align: center;
+}
+
+.itemSearchBar {
+    width:200px;
+}
+
+p {
+    margin-left: 25px;
+}
+
+footer {
+    height: 30px;
+    text-align: center;
+    background: #DCBEF9;
+    background: -webkit-linear-gradient(top left, #DCBEF9, #CFACEF);
+    background: -moz-linear-gradient(top left, #DCBEF9, #CFACEF);
+    background: linear-gradient(to bottom right, #DCBEF9, #CFACEF);
+}
+
+.footerLinks {
+    display: inline-block;
+}
+
+.card {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.specialItems {
+    display: flex;
+}
+
+.milkTeas {
+    display: flex;
+}
+
+.regTeas {
+    display: flex;
+}
+
+figcaption {
+    align-self: flex-start;
+    margin-left: 40px;
+}
+
+img {
+    size: 20px;
+}
+
+.rTeas {
+    margin-left: 25px;
+    max-width: 200px;
+    max-height: 200px;
+    display: inline-block;
+}
