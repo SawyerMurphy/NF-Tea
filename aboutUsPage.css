@@ -1,0 +1,84 @@
+.navBar {
+    height: fit-content;
+    display: block;
+    overflow: hidden;
+    padding: 8px;
+    color: white;
+    background: #DCBEF9;
+    background: -webkit-linear-gradient(top left, #DCBEF9, #CFACEF);
+    background: -moz-linear-gradient(top left, #DCBEF9, #CFACEF);
+    background: linear-gradient(to bottom right, #DCBEF9, #CFACEF);
+}
+
+.link {
+    white-space: nowrap;
+    float: left;
+    padding: 0px 50px;
+}
+
+.links {
+    font-size: larger;
+    padding: 70px 0px;
+}
+
+.div {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    padding-top: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 1%;
+}
+
+.logo {
+    float: left;
+    padding-left: 20px;
+}
+
+.logoPic {
+    float: right;
+    padding-left: 20px;
+}
+
+.sawyerSection {
+    display: block;
+}
+
+.ethanSection {
+    display: block;
+}
+
+.ethanPic {
+    align-items: left;
+    height: 400px;
+    float: left;
+}
+
+.sawyerPic {
+    float: left;
+    align-items: left;
+    height: 400px;
+}
+
+footer {
+    height: 30px;
+    text-align: center;
+    display: block;
+    bottom: 0;
+    background: #DCBEF9;
+    background: -webkit-linear-gradient(top left, #DCBEF9, #CFACEF);
+    background: -moz-linear-gradient(top left, #DCBEF9, #CFACEF);
+    background: linear-gradient(to bottom right, #DCBEF9, #CFACEF);
+}
+
+.footerLinks {
+    display: inline-block;
+}
