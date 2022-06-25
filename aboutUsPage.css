@@ -48,16 +48,23 @@ body {
     padding-left: 20px;
 }
 
-.sawyerSection {
+.section2 {
     display: block;
 }
 
 .ethanSection {
-    display: block;
+    border: 2px;
+    border-color: black;
+    display: inline-block;
+}
+
+.sawyerSection {
+    display: inline-block;
 }
 
 .ethanPic {
     align-items: left;
+    float: right;
     height: 400px;
     float: left;
 }
