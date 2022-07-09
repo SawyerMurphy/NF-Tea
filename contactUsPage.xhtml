@@ -2,93 +2,95 @@
     PUBLIC  "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>NF-Tea</title>
-        <link rel="stylesheet" href="contactUsPage.css" type="text/css"/>
-    </head>
-    <body>
-        <div class="navBar">
-            <div class="logo">
-                <a href="homePage.xhtml"><img src="nfTeaMeme.svg" alt="Meme" style="width: 300px"></img>
-                </a>
-            </div>
-            <div class="links">
-                <a class="link" href="homePage.xhtml">Home</a>
-                <a class="link" href="menuPage.xhtml">Menu</a>
-                <a class="link" href="orderNowPage.xhtml">Order Now</a>
-                <a class="link" href="locationsPage.xhtml">Locations</a>
-                <a class="link" href="aboutUsPage.xhtml">About Us</a>
-                <a class="link" href="#">Contact Us</a>
-            </div>
-        </div>
-        <h1 class="contactUsTitle">Contact Us</h1>
-        <div class="contactInfo">
-            <p>Have any inquiries or comments to make regarding any of 
-                NF-Tea's locations? You can hover over each icon for information below!</p>
-            <br/>
 
-            <div class="icons">
-                <!--All logos are created and distributed by Dave Gandy-->
-                <img title="613-200-7890" src="telephone-symbol-button.png"/>
-                <img title="nf-teadrinks@outlook.com" src="envelope.png"/>
-                <img title="NFTea-Tweets" src="twitter-sign.png"/>
-                <img title="NFTea-FB" src="facebook-logo.png"/>
-                <img title="NFTea-IG" src="instagram-symbol.png"/> <br/> <br/> <br/> <br/> <br/> <br/>
-                 <img class="calendarIcon" src="calendar.png"/> <br/> <br/> <br/> <br/> <br/> <br/>
-            </div>
-            <p class="hoursTitles">Regular Hours ------- Holiday Hours</p>
-            <p class="hours">Mon. 10:00 - 18:00 ------- 10:00 - 14:00</p>
-            <p class="hours">&nbsp; Tue. 10:00 - 18:00 ------- 10:00 - 14:00</p>
-            <p class="hours">Wed. 10:00 - 18:00 ------- 10:00 - 14:00</p>
-            <p class="hours">Thu. 10:00 - 18:00 ------- 10:00 - 14:00</p>
-            <p class="hours">&nbsp; Fri. 10:00 - 18:00 ------- 10:00 - 14:00</p>
-            <p class="hours">&nbsp;Sat. 10:00 - 18:00 ------- &nbsp; &nbsp;CLOSED</p>
-            <p class="hours">Sun. 10:00 - 16:00 ------- &nbsp; &nbsp;CLOSED</p>
+<head>
+    <title>NF-Tea</title>
+    <link rel="stylesheet" href="contactUsPage.css" type="text/css" />
+</head>
+
+<body>
+    <div class="navBar">
+        <div class="logo">
+            <a href="homePage.xhtml"><img src="./Assets/nfTeaMeme.svg" alt="Meme" style="width: 300px"></img>
+            </a>
         </div>
-        <div class="staffApplicationForm">
-            <h2>General Staff Application</h2>
-            <p class="staffAppText">Positions that NF-Tea is hiring for are Servers, Dishwashers, Cashiers, and Janitors.</p>
-            <form action="actions.php" method="post">
-                <div>
-                    <label class="c1">
+        <div class="links">
+            <a class="link" href="homePage.xhtml">Home</a>
+            <a class="link" href="menuPage.xhtml">Menu</a>
+            <a class="link" href="orderNowPage.xhtml">Order Now</a>
+            <a class="link" href="locationsPage.xhtml">Locations</a>
+            <a class="link" href="aboutUsPage.xhtml">About Us</a>
+            <a class="link" href="#">Contact Us</a>
+        </div>
+    </div>
+    <h1 class="contactUsTitle">Contact Us</h1>
+    <div class="contactInfo">
+        <p>Have any inquiries or comments to make regarding any of NF-Tea's locations? You can hover over each icon for information below!</p>
+        <br/>
+
+        <div class="icons">
+            <!--All logos are created and distributed by Dave Gandy-->
+            <img title="613-200-7890" src="./Assets/telephone-symbol-button.png" />
+            <img title="nf-teadrinks@outlook.com" src="./Assets/envelope.png" />
+            <img title="NFTea-Tweets" src="./Assets/twitter-sign.png" />
+            <img title="NFTea-FB" src="./Assets/facebook-logo.png" />
+            <img title="NFTea-IG" src="./Assets/instagram-symbol.png" /> <br/> <br/> <br/> <br/> <br/> <br/>
+            <img class="calendarIcon" src="./Assets/calendar.png" /> <br/> <br/> <br/> <br/> <br/> <br/>
+        </div>
+        <p class="hoursTitles">Regular Hours ------- Holiday Hours</p>
+        <p class="hours">Mon. 10:00 - 18:00 ------- 10:00 - 14:00</p>
+        <p class="hours">&nbsp; Tue. 10:00 - 18:00 ------- 10:00 - 14:00</p>
+        <p class="hours">Wed. 10:00 - 18:00 ------- 10:00 - 14:00</p>
+        <p class="hours">Thu. 10:00 - 18:00 ------- 10:00 - 14:00</p>
+        <p class="hours">&nbsp; Fri. 10:00 - 18:00 ------- 10:00 - 14:00</p>
+        <p class="hours">&nbsp;Sat. 10:00 - 18:00 ------- &nbsp; &nbsp;CLOSED</p>
+        <p class="hours">Sun. 10:00 - 16:00 ------- &nbsp; &nbsp;CLOSED</p>
+    </div>
+    <div class="staffApplicationForm">
+        <h2>General Staff Application</h2>
+        <p class="staffAppText">Positions that NF-Tea is hiring for are Servers, Dishwashers, Cashiers, and Janitors.</p>
+        <form action="actions.php" method="post">
+            <div>
+                <label class="c1">
                         First Name:  <input type="text" id="fname" name="fname" class="c1"></input>
                     </label>
-                    <label class="c2">
+                <label class="c2">
                         Last Name: <input type="text" id="lname" name="lname" class="c2"></input>
                     </label>
-                    <label class="c1">
+                <label class="c1">
                         House Number: <input type="text" id="houseNo" name="houseNo" class="c1"></input>
                     </label>
-                    <label class="c2">
+                <label class="c2">
                         Street: <input type="text" id="street" name="street" class="c2"></input>
                     </label>
-                    <label class="c1">
+                <label class="c1">
                         City: <input type="text" id="city" name="city" class="c1"></input>
                     </label>
-                    <label class="c2">
+                <label class="c2">
                         Postal Code: <input type="text" id="pCode" name="pCode" class="c2"></input>
                     </label>
-                    <label class="c1">
+                <label class="c1">
                         Desired Salary: <input type="text" id="salary" name="salary" class="c1"></input>
                     </label>
-                    <label class="c2">
+                <label class="c2">
                         Nationality: <input type="text" id="nationality" name="nationality" class="c2"></input>
                     </label>
-                    <label class="c1">
+                <label class="c1">
                         Level of Education: <input type="text" id="education" name="education" class="c1"></input>
                     </label>
-                    <label class="c2">
+                <label class="c2">
                         Preferred Position: <input type="text" id="position" name="position" class="c2"></input>
                     </label>
-                    <input type="submit" id="applicationSubmit" name="applicationSubmit" class="appSubmit"/> <br/>
-                </div>
-            </form>
-        </div>
-        <footer>
-            <a class="footerLinks" href="#">Hours</a>
-            <a class="footerLinks" href="#">Contact Us</a>
-            <a class="footerLinks" href="#">Social Media</a>
-        </footer>
-        
-    </body>
+                <input type="submit" id="applicationSubmit" name="applicationSubmit" class="appSubmit" /> <br/>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <a class="footerLinks" href="#">Hours</a>
+        <a class="footerLinks" href="#">Contact Us</a>
+        <a class="footerLinks" href="#">Social Media</a>
+    </footer>
+
+</body>
+
 </html>

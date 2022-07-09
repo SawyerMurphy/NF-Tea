@@ -2,73 +2,76 @@
     PUBLIC  "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>NF-Tea</title>
-        <link rel="stylesheet" href="orderNowPage.css" type="text/css"/>
-    </head>
-    <body>
-        <div class="navBar">
-            <div class="logo">
-                <a href="homePage.xhtml"><img src="nfTeaMeme.svg" alt="Meme" style="width: 300px"></img>
-                </a>
-            </div>
-            <div class="links">
-                <a class="link" href="homePage.xhtml">Home</a>
-                <a class="link" href="menuPage.xhtml">Menu</a>
-                <a class="link" href="#">Order Now</a>
-                <a class="link" href="locationsPage.xhtml">Locations</a>
-                <a class="link" href="aboutUsPage.xhtml">About Us</a>
-                <a class="link" href="contactUsPage.xhtml">Contact Us</a>
-            </div>
+
+<head>
+    <title>NF-Tea</title>
+    <link rel="stylesheet" href="orderNowPage.css" type="text/css" />
+</head>
+
+<body>
+    <div class="navBar">
+        <div class="logo">
+            <a href="homePage.xhtml"><img src="./Assets/nfTeaMeme.svg" alt="Meme" style="width: 300px"></img>
+            </a>
         </div>
-        <h1 class="orderNowTitle">Order Now</h1>
-        <div class="orderNowOptions">
-            <p>Please select an option.</p>
-            <input class="radioBtn" type="radio" id="takeout" value="takeout" name="tOrD"/>
-            <label for="takeOut">Takeout</label>
-            <input class="radioBtn" type="radio" id="delivery" value="delivery" name="tOrD"/>
-            <label for="delivery">Delivery</label>
+        <div class="links">
+            <a class="link" href="homePage.xhtml">Home</a>
+            <a class="link" href="menuPage.xhtml">Menu</a>
+            <a class="link" href="#">Order Now</a>
+            <a class="link" href="locationsPage.xhtml">Locations</a>
+            <a class="link" href="aboutUsPage.xhtml">About Us</a>
+            <a class="link" href="contactUsPage.xhtml">Contact Us</a>
         </div>
-        <div class="orderForm">
-            <br /> <p>Please enter all the required information below to complete your NF-Tea Order!</p>
-            <p> Order: <br/>
-                - Items will be listed here based on what you selected in the Menu page! <br/>
-            </p>
-            <h4>Total: $0.00</h4>
-            <form action="actions.php" method="post">
-                <div>
-                    <label>
+    </div>
+    <h1 class="orderNowTitle">Order Now</h1>
+    <div class="orderNowOptions">
+        <p>Please select an option.</p>
+        <input class="radioBtn" type="radio" id="takeout" value="takeout" name="tOrD" />
+        <label for="takeOut">Takeout</label>
+        <input class="radioBtn" type="radio" id="delivery" value="delivery" name="tOrD" />
+        <label for="delivery">Delivery</label>
+    </div>
+    <div class="orderForm">
+        <br />
+        <p>Please enter all the required information below to complete your NF-Tea Order!</p>
+        <p> Order: <br/> - Items will be listed here based on what you selected in the Menu page! <br/>
+        </p>
+        <h4>Total: $0.00</h4>
+        <form action="actions.php" method="post">
+            <div>
+                <label>
                         First Name:  <input type="text" id="fname" name="fname"></input>
                     </label>
-                    <label>
+                <label>
                         Last Name: <input type="text" id="lname" name="lname"></input> <br/>
                     </label>
-                    <label>
+                <label>
                         House Number: <input type="text" id="houseNo" name="houseNo"></input>
                     </label>
-                    <label>
+                <label>
                         Street: <input type="text" id="street" name="street"></input> <br/>
                     </label>
-                    <label>
+                <label>
                         Credit Card Number: <input type="text" id="ccNo" name="ccNo"></input>
                     </label>
-                    <label>
+                <label>
                         Credit Card Code: <input type="text" id="ccCode" name="ccCode" maxlength="3"></input> <br />
                     </label>
-                    <label>
+                <label>
                         Expiry Month: <input type="text" id="ccMonth" name="ccMonth" maxlength="2"></input>
                     </label>
-                    <label>
+                <label>
                         Expiry Year: <input type="text" id="ccYear" name="ccYear" maxlength="4"></input> <br />
                     </label> <br/> <br/>
-                    <input type="submit" id="orderSubmit" name="orderSubmit"/>
-                </div>
-            </form>
-        </div> <br/>
-        <footer>
-            <a class="footerLinks" href="contactUsPage.xhtml">Hours</a>
-            <a class="footerLinks" href="contactUsPage.xhtml">Contact Us</a>
-            <a class="footerLinks" href="contactUsPage.xhtml">Social Media</a>
-        </footer>
-    </body>
+                <input type="submit" id="orderSubmit" name="orderSubmit" />
+            </div>
+        </form>
+    </div> <br/>
+    <footer>
+        <a class="footerLinks" href="contactUsPage.xhtml">Hours</a>
+        <a class="footerLinks" href="contactUsPage.xhtml">Contact Us</a>
+        <a class="footerLinks" href="contactUsPage.xhtml">Social Media</a>
+    </footer>
+</body>
+
 </html>
