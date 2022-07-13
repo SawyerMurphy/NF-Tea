@@ -103,3 +103,7 @@ body {
 .num-field {
     margin-left: 25px;
 }
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1;
+}

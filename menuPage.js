@@ -160,8 +160,7 @@ function chosenItems() {
     if((!isTorDClicked) || (!listCompleted)) {
         do {
             if(obj[i].quantity != 0) {
-                newText1.innerHTML += "- " + obj[i].name + " (x" + obj[i].quantity + ")," ;
-                //document.write("<br />") ;
+                newText1.innerHTML += " " + obj[i].name + " (x" + obj[i].quantity + ")," ;
             }
             i += 1 ;
         } while(i < tot) ;
