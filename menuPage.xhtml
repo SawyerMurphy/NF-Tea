@@ -6,6 +6,7 @@
 <head>
     <title>NF-Tea</title>
     <link rel="stylesheet" href="menuPage.css" type="text/css" />
+    <script src="menuPage.js"></script>
 </head>
 
 <body>
@@ -34,14 +35,23 @@
         <div class="card">
             <img src="./Assets/MatchaBTea.PNG" />
             <figcaption>Matcha Tea - $5.00</figcaption>
+            <div class="inputGroup">
+                <input type="number" id="matchaCV" step="1" value="0" name="num" class="num-field" min="0" onclick="fillMatcha(this.value);setTotal()"/>
+            </div>
         </div>
         <div class="card">
             <img src="./Assets/BananaBerryBTea.PNG" />
             <figcaption>Banana Berry Tea - $5.00</figcaption>
+            <div class="inputGroup">
+                <input type="number" step="1" value="0" name="num" class="num-field" min="0" onclick="fillBananaBerry(this.value);setTotal()"/>
+            </div>
         </div>
         <div class="card">
             <img src="./Assets/PassionfruitBTea.PNG" />
             <figcaption>Passionfruit Tea - $5.00</figcaption>
+            <div class="inputGroup">
+                <input type="number" step="1" value="0" name="num" class="num-field" min="0" onclick="fillPassionfruit(this.value);setTotal()"/>
+            </div>
         </div>
     </div>
     <h2 class="milkTeaItemsTitle">Milk Teas</h2>
@@ -50,14 +60,23 @@
         <div class="card">
             <img src="./Assets/StrawberryMTea.PNG" />
             <figcaption>Strawberry Milk Tea - $4.00</figcaption>
+            <div class="inputGroup">
+                <input type="number" step="1" value="0" name="num" class="num-field" min="0" onclick="fillStrawberry(this.value);setTotal()"/>
+            </div>
         </div>
         <div class="card">
             <img src="./Assets/MangoMTea.PNG" />
             <figcaption>Mango Milk Tea - $4.00</figcaption>
+            <div class="inputGroup">
+                <input type="number" step="1" value="0" name="num" class="num-field" min="0" onclick="fillMango(this.value);setTotal()"/>
+            </div>
         </div>
         <div class="card">
             <img src="./Assets/BerryBlastMTea.PNG" />
             <figcaption>Berry Blast Milk Tea - $4.00</figcaption>
+            <div class="inputGroup">
+                <input type="number" step="1" value="0" name="num" class="num-field" min="0" onclick="fillBerryBlast(this.value);setTotal()"/>
+            </div>
         </div>
     </div>
     <h2 class="regTeasTitle">Regular Teas</h2>
@@ -66,14 +85,23 @@
         <div class="card">
             <img class="rTeas" src="./Assets/GreenTea.PNG" />
             <figcaption>Green Tea - $3.00</figcaption>
+            <div class="inputGroup">
+                <input type="number" step="1" value="0" name="num" class="num-field" min="0" onclick="fillGreen(this.value);setTotal()"/>
+            </div>
         </div>
         <div class="card">
             <img class="rTeas" src="./Assets/OrangePekoeTea.PNG" />
             <figcaption>Orange Pekoe Tea - $3.00</figcaption>
+            <div class="inputGroup">
+                <input type="number" step="1" value="0" name="num" class="num-field" min="0" onclick="fillOrangePekoe(this.value);setTotal()"/>
+            </div>
         </div>
         <div class="card">
             <img class="rTeas" src="./Assets/ChaiTea.PNG" />
             <figcaption>Chai Tea - $3.00</figcaption>
+            <div class="inputGroup">
+                <input type="number" step="1" value="0" name="num" class="num-field" min="0" onclick="fillChai(this.value);setTotal()"/>
+            </div>
         </div>
     </div> <br/>
     <footer>

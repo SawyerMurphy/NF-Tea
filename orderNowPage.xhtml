@@ -6,6 +6,8 @@
 <head>
     <title>NF-Tea</title>
     <link rel="stylesheet" href="orderNowPage.css" type="text/css" />
+    <script src="orderNowPage.js"></script>
+    <script src="menuPage.js"></script>
 </head>
 
 <body>
@@ -25,18 +27,19 @@
     </div>
     <h1 class="orderNowTitle">Order Now</h1>
     <div class="orderNowOptions">
-        <p>Please select an option.</p>
-        <input class="radioBtn" type="radio" id="takeout" value="takeout" name="tOrD" />
+        <p>Please select an option before you can view your order.</p>
+        <input class="radioBtn" type="radio" id="takeout" value="takeout" name="tOrD" onclick="chosenItems();setTorD()" />
         <label for="takeOut">Takeout</label>
-        <input class="radioBtn" type="radio" id="delivery" value="delivery" name="tOrD" />
+        <input class="radioBtn" type="radio" id="delivery" value="delivery" name="tOrD" onclick="chosenItems();setTorD()" />
         <label for="delivery">Delivery</label>
     </div>
     <div class="orderForm">
-        <br />
         <p>Please enter all the required information below to complete your NF-Tea Order!</p>
-        <p> Order: <br/> - Items will be listed here based on what you selected in the Menu page! <br/>
-        </p>
-        <h4>Total: $0.00</h4>
+        <p> Order: </p>
+        <div id="displayItems" class="displayItems">
+        </div> <br />
+        <div id="displayTotal" class="displayTotal">
+        </div> <br />
         <form action="actions.php" method="post">
             <div>
                 <label>
