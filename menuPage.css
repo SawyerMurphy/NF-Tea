@@ -10,7 +10,7 @@
     background: linear-gradient(to bottom right, #DCBEF9, #CFACEF);
 }
 
-.menuSearchBarText {
+.searchBarAndFilters {
     text-align: center;
 }
 
@@ -98,4 +98,8 @@ body {
 .logo {
     float: left;
     padding-left: 20px;
+}
+
+.num-field {
+    margin-left: 25px;
 }

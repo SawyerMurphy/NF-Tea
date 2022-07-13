@@ -161,6 +161,7 @@ function chosenItems() {
         do {
             if(obj[i].quantity != 0) {
                 newText1.innerHTML += "- " + obj[i].name + " (x" + obj[i].quantity + ")," ;
+                //document.write("<br />") ;
             }
             i += 1 ;
         } while(i < tot) ;
@@ -174,4 +175,136 @@ function chosenItems() {
 
 function setTorD() {
     isTorDClicked = true ;
+}
+
+function filter() {
+    var specCheck = document.getElementById("specialItemCheck") ;
+    var milkCheck = document.getElementById("milkTeaCheck") ;
+    var regCheck = document.getElementById("regTeaCheck") ;
+
+    var specEle = document.getElementById("specialItems") ;
+    var milkEle = document.getElementById("milkTeas") ;
+    var regEle = document.getElementById("regTeas") ;
+
+    var p1 = "" ;
+    var p2 = "" ;
+    var p3 = "" ;
+
+    if(specCheck.checked) {
+        p1 = "1" ;
+    } else {
+        p1 = "0" ;
+    }
+
+    if(milkCheck.checked) {
+        p2 = "1" ;
+    } else {
+        p2 = "0" ;
+    }
+
+    if(regCheck.checked) {
+        p3 = "1" ;
+    } else {
+        p3 = "0" ;
+    }
+
+    var pCombo = p1.concat(p2, p3) ;
+    console.log(pCombo) ;
+
+    switch (pCombo) {
+        case '000':
+            document.getElementById("specialItemsTitle").style.display = "flex" ;
+            specEle.style.display = "flex" ;
+            document.getElementById("milkTeaItemsTitle").style.display = "flex" ;
+            milkEle.style.display = "flex" ;
+            document.getElementById("regTeasTitle").style.display = "flex" ;
+            regEle.style.display = "flex" ;
+            break ;
+        
+        case '001':
+            document.getElementById("specialItemsTitle").style.display = "flex" ;
+            specEle.style.display = "flex" ;
+            document.getElementById("milkTeaItemsTitle").style.display = "flex" ;
+            milkEle.style.display = "flex" ;
+            document.getElementById("regTeasTitle").style.display = "flex" ;
+            regEle.style.display = "flex" ;
+
+            document.getElementById("specialItemsTitle").style.display = "none" ;
+            specEle.style.display = "none" ;
+            document.getElementById("milkTeaItemsTitle").style.display = "none" ;
+            milkEle.style.display = "none" ;
+            break ;
+        
+        case '011':
+            document.getElementById("specialItemsTitle").style.display = "flex" ;
+            specEle.style.display = "flex" ;
+            document.getElementById("milkTeaItemsTitle").style.display = "flex" ;
+            milkEle.style.display = "flex" ;
+            document.getElementById("regTeasTitle").style.display = "flex" ;
+            regEle.style.display = "flex" ;
+
+            document.getElementById("specialItemsTitle").style.display = "none" ;
+            specEle.style.display = "none" ;
+            break ;
+        
+        case '010':
+            document.getElementById("specialItemsTitle").style.display = "flex" ;
+            specEle.style.display = "flex" ;
+            document.getElementById("milkTeaItemsTitle").style.display = "flex" ;
+            milkEle.style.display = "flex" ;
+            document.getElementById("regTeasTitle").style.display = "flex" ;
+            regEle.style.display = "flex" ;
+
+            document.getElementById("specialItemsTitle").style.display = "none" ;
+            specEle.style.display = "none" ;
+            document.getElementById("regTeasTitle").style.display = "none" ;
+            regEle.style.display = "none" ;
+            break ;
+        
+        case '100':
+            document.getElementById("specialItemsTitle").style.display = "flex" ;
+            specEle.style.display = "flex" ;
+            document.getElementById("milkTeaItemsTitle").style.display = "flex" ;
+            milkEle.style.display = "flex" ;
+            document.getElementById("regTeasTitle").style.display = "flex" ;
+            regEle.style.display = "flex" ;
+
+            document.getElementById("milkTeaItemsTitle").style.display = "none" ;
+            milkEle.style.display = "none" ;
+            document.getElementById("regTeasTitle").style.display = "none" ;
+            regEle.style.display = "none" ;
+            break ;
+
+        case '101':
+            document.getElementById("specialItemsTitle").style.display = "flex" ;
+            specEle.style.display = "flex" ;
+            document.getElementById("milkTeaItemsTitle").style.display = "flex" ;
+            milkEle.style.display = "flex" ;
+            document.getElementById("regTeasTitle").style.display = "flex" ;
+            regEle.style.display = "flex" ;
+
+            document.getElementById("milkTeaItemsTitle").style.display = "none" ;
+            milkEle.style.display = "none" ;
+            break ;
+
+        case '110':
+            document.getElementById("specialItemsTitle").style.display = "flex" ;
+            specEle.style.display = "flex" ;
+            document.getElementById("milkTeaItemsTitle").style.display = "flex" ;
+            milkEle.style.display = "flex" ;
+            document.getElementById("regTeasTitle").style.display = "flex" ;
+            regEle.style.display = "flex" ;
+
+            document.getElementById("regTeasTitle").style.display = "none" ;
+            regEle.style.display = "none" ;
+            break ;
+
+        case '111':
+            document.getElementById("specialItemsTitle").style.display = "flex" ;
+            specEle.style.display = "flex" ;
+            document.getElementById("milkTeaItemsTitle").style.display = "flex" ;
+            milkEle.style.display = "flex" ;
+            document.getElementById("regTeasTitle").style.display = "flex" ;
+            regEle.style.display = "flex" ;
+    }
 }

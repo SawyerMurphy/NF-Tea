@@ -25,12 +25,19 @@
         </div>
     </div>
     <h1 class="menuTitle">NF-Tea Menu</h1>
-    <div class="menuSearchBarText">
-        <p>Use the search bar below to find specific items.</p>
-        <input type="text" id="itemSearch" name="itemSearch" class="itemSearchBar"></input>
+    <div class="searchBarAndFilters">
+        <p>Use the search bar and filters below to find specific items.</p>
+        <input type="text" id="itemSearch" name="itemSearch" class="itemSearchBar" value=""/> <br /> <br />
+        <input type="checkbox" id="specialItemCheck" class="specialItemCheck" name="specialItemC"/>
+        <label for="specialItemC">Special Item</label>
+        <input type="checkbox" id="milkTeaCheck" class="milkTeaCheck" name="milkTeaC"/>
+        <label for="milkTeaC">Milk Tea</label>
+        <input type="checkbox" id="regTeaCheck" class="regTeaCheck" name="regTeaC"/>
+        <label for="regTeaC">Regular Tea</label> <br /> <br />
+        <input type="submit" id="searchAndFilterBtn" class="searchAndFilterBtn" onclick="filter()"/>
     </div> <br/>
-    <h2 class="specialItemsTitle">Special Items</h2>
-    <div class="specialItems">
+    <h2 class="specialItemsTitle" id="specialItemsTitle">Special Items</h2>
+    <div class="specialItems" id="specialItems">
         <br/>
         <div class="card">
             <img src="./Assets/MatchaBTea.PNG" />
@@ -54,8 +61,8 @@
             </div>
         </div>
     </div>
-    <h2 class="milkTeaItemsTitle">Milk Teas</h2>
-    <div class="milkTeas">
+    <h2 class="milkTeaItemsTitle" id="milkTeaItemsTitle">Milk Teas</h2>
+    <div class="milkTeas" id="milkTeas">
         <br/>
         <div class="card">
             <img src="./Assets/StrawberryMTea.PNG" />
@@ -79,8 +86,8 @@
             </div>
         </div>
     </div>
-    <h2 class="regTeasTitle">Regular Teas</h2>
-    <div class="regTeas">
+    <h2 class="regTeasTitle" id="regTeasTitle">Regular Teas</h2>
+    <div class="regTeas" id="regTeas">
         <br/>
         <div class="card">
             <img class="rTeas" src="./Assets/GreenTea.PNG" />
