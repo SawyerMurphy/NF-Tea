@@ -1,14 +1,15 @@
 .navBar {
     height: fit-content;
     display: block;
-    overflow: hidden;
     padding: 8px;
     color: white;
     background: #DCBEF9;
+    overflow: hidden;
     background: -webkit-linear-gradient(top left, #DCBEF9, #CFACEF);
     background: -moz-linear-gradient(top left, #DCBEF9, #CFACEF);
     background: linear-gradient(to bottom right, #DCBEF9, #CFACEF);
 }
+
 
 .card {
     /* Add shadows to create the "card" effect */

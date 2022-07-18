@@ -10,8 +10,6 @@
 
     <link rel="stylesheet" href="./locationsPage.css" type="text/css" />
     <script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script type="module" src="./index.js"></script>
-
     <style type="text/css">
         /* Always set the map height explicitly to define the size of the div
            * element that contains the map. */
@@ -50,7 +48,7 @@
                 <img class="restaurantPic" src="./Assets/restaurant1.jpg" alt="restaurant1" style="height: 230px;" />
                 <div class="container">
                     <h4><b>Nelson</b></h4>
-                    <p>Address</p>
+                    <p>1800 Address St</p>
                 </div>
             </div>
 
@@ -59,7 +57,7 @@
                 <img class="restaurantPic" src="./Assets/restaurant2.jpg" alt="restaurant2" style="height: 230px;" />
                 <div class="container">
                     <h4><b>uOttawa</b></h4>
-                    <p>Idk an address</p>
+                    <p>45 University Private</p>
                 </div>
             </div>
 
@@ -67,7 +65,7 @@
                 <img class="restaurantPic" src="./Assets/restaurant3.jpg" alt="restaurant3" style="height: 230px;" />
                 <div class="container">
                     <h4><b>Rideau</b></h4>
-                    <p>Meme address I'm tired</p>
+                    <p>715 Downtown rd</p>
                 </div>
             </div>
         </div>
@@ -75,46 +73,7 @@
         <div>
             <h1>Find our locations on the map</h1>
             <div id="map"></div>
-            <script type="text/javascript">
-                var map;
-
-                function initMap() {
-                    map = new google.maps.Map(document.getElementById('map'), {
-                        center: {
-                            lat: 45.426022,
-                            lng: -75.681213
-                        },
-                        zoom: 15
-                    });
-
-                    // The marker, positioned at Nelson
-                    const marker = new google.maps.Marker({
-                        position: {
-                            lat: 45.426022,
-                            lng: -75.681214
-                        },
-                        map: map,
-                    });
-
-                    // The marker, positioned at uOttawa
-                    const marker2 = new google.maps.Marker({
-                        position: {
-                            lat: 45.423000,
-                            lng: -75.681400
-                        },
-                        map: map,
-                    });
-
-                    // The marker, positioned at Byward
-                    const marker3 = new google.maps.Marker({
-                        position: {
-                            lat: 45.429000,
-                            lng: -75.68900
-                        },
-                        map: map,
-                    });
-                }
-            </script>
+            <script src="locationsPage.js" defer="defer"></script>
             <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2dOUgSbmlWbP-S3-rW1b83YOeFopFYDE&amp;callback=initMap" defer="defer"></script>
         </div>
     </div>

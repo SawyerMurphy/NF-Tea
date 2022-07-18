@@ -155,7 +155,6 @@ function chosenItems() {
     var array = sessionStorage.getItem("cartArray") ;
     var obj = JSON.parse(array) ;
     var tot = sessionStorage.getItem("totalItems") ;
-    console.log(array) ;
 
     /*if((!isTorDClicked) || (!listCompleted)) {*/
         do {
@@ -169,7 +168,6 @@ function chosenItems() {
 
     var newText2 = document.getElementById("displayTotal") ;
     newText2.innerHTML = "Total: $" + sessionStorage.getItem("curTotal") + ".00" ;
-    console.log(tot) ;
 }
 
 function setTorD() {

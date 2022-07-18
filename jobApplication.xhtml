@@ -8,25 +8,10 @@
     <link rel="stylesheet" href="aboutUsPage.css" type="text/css" />
 
             <!-- Get info from url-->
-            <script>
-                window.onload = function() {
-                    let params = new URLSearchParams(location.search);
-                    let name = params.get('lname')+", "+params.get('fname');
-                    let address = params.get('houseNo')+" "+ params.get('street')+" "+ params.get('city')+", "+ params.get('pCode');
-                    let education=params.get("education");
-                    let age=params.get("age");
-                    let position=params.get("position");
-        
-                    document.getElementById('name').innerHTML = name;
-                    document.getElementById('address').innerHTML = address;
-                    document.getElementById('age').innerHTML = age;
-                    document.getElementById('education').innerHTML = education;
-                    document.getElementById('position').innerHTML = position;
-                }
-            </script>
+            <script src="jobApplication.js"></script>
 </head>
 
-<body>
+<body onload="loadValues()">
 
     <!--Nav Bar-->
     <div class="navBar">
@@ -71,7 +56,7 @@
                 </tr>
                 <tr>
                     <td>Salary Requested:</td>
-                    <td id="position"></td>
+                    <td id="salary"></td>
                 </tr>
             </table>
     

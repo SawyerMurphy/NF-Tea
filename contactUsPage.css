@@ -1,14 +1,15 @@
-.navBar{
+.navBar {
     height: fit-content;
     display: block;
-    overflow: hidden;
     padding: 8px;
-    color:white;
+    color: white;
     background: #DCBEF9;
+    overflow: hidden;
     background: -webkit-linear-gradient(top left, #DCBEF9, #CFACEF);
     background: -moz-linear-gradient(top left, #DCBEF9, #CFACEF);
     background: linear-gradient(to bottom right, #DCBEF9, #CFACEF);
 }
+
 
 .link {
     white-space: nowrap;
@@ -19,6 +20,11 @@
 .links {
     font-size: larger;
     padding: 70px 0px;
+}
+
+.logo {
+    float: left;
+    padding-left: 20px;
 }
 
 .div {
@@ -35,6 +41,7 @@ body {
     padding-top: 20px;
     padding-left: 15%;
     padding-right: 15%;
+    padding-bottom: 1%;
 }
 
 form {
@@ -62,7 +69,7 @@ p {
     margin-left: 25px;
 }
 
-img {
+.icon {
     margin-left: 25px;
     float: left;
     width: 100px;
@@ -72,6 +79,10 @@ img {
 
 .calendarIcon {
     margin-left: 275px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
 
 .hoursTitles {
@@ -93,9 +104,4 @@ footer {
 
 .footerLinks {
     display: inline-block;
-}
-
-.logo {
-    float: left;
-    padding-left: 20px;
 }

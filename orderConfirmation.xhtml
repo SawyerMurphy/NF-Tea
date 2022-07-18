@@ -13,6 +13,12 @@
         <!-- Get info from url-->
         <script>
             window.onload = function() {
+                chosenItems();
+
+                const months=["January","February","March","April","May","June","July","August","September","October","November","December"];
+                const d = new Date();
+
+                let todaysDate= d.getHours()+":"+d.getMinutes()+" "+months[d.getMonth()]+" "+d.getDate()+", "+d.getFullYear();
                 let params = new URLSearchParams(location.search);
                 let name = params.get('lname')+", "+params.get('fname');
                 let address = params.get('houseNo')+" "+ params.get('street');
@@ -21,11 +27,17 @@
                 let ccDate = params.get('ccMonth')+"/"+ params.get('ccYear');
     
                 document.getElementById('name').innerHTML = name;
+                document.getElementById('time').innerHTML = todaysDate
                 document.getElementById('address').innerHTML = address;
                 document.getElementById('cc').innerHTML = cc;
                 document.getElementById('ccDate').innerHTML = ccDate;
+                ;
             }
+
+            const d = new Date();
         </script>
+
+
 </head>
 
 <body>
@@ -51,8 +63,12 @@
                 <td id="name"></td>
             </tr>
             <tr>
-                <td>Total:</td>
-                <td id="total"></td>
+                <td>Items:</td>
+                <td id="displayItems"></td>
+            </tr>
+            <tr>
+                <td>Day Order Placed:</td>
+                <td id="time"></td>
             </tr>
             <tr>
                 <td>Address:</td>
@@ -63,10 +79,12 @@
                 <td id="cc"></td>
             </tr>
             <tr>
-                <td>Credit Card Date:</td>
+                <td>Credit Card Expiration:</td>
                 <td id="ccDate"></td>
             </tr>
         </table>
+        <br/>
+        <div id="displayTotal"></div>
 
     </div> <br/>
     <footer>
