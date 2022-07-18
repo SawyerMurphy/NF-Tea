@@ -157,7 +157,7 @@ function chosenItems() {
     var tot = sessionStorage.getItem("totalItems") ;
     console.log(array) ;
 
-    if((!isTorDClicked) || (!listCompleted)) {
+    /*if((!isTorDClicked) || (!listCompleted)) {*/
         do {
             if(obj[i].quantity != 0) {
                 newText1.innerHTML += " " + obj[i].name + " (x" + obj[i].quantity + ")," ;
@@ -165,7 +165,7 @@ function chosenItems() {
             i += 1 ;
         } while(i < tot) ;
         listCompleted = true ;
-    }
+    //}
 
     var newText2 = document.getElementById("displayTotal") ;
     newText2.innerHTML = "Total: $" + sessionStorage.getItem("curTotal") + ".00" ;
