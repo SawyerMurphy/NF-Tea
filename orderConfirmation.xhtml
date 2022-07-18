@@ -1,0 +1,79 @@
+<!DOCTYPE html
+    PUBLIC  "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    
+    <title>NF-Tea</title>
+    <link rel="stylesheet" href="orderNowPage.css" type="text/css" />
+    <script src="orderNowPage.js"></script>
+    <script src="menuPage.js"></script>
+
+        <!-- Get info from url-->
+        <script>
+            window.onload = function() {
+                let params = new URLSearchParams(location.search);
+                let name = params.get('lname')+", "+params.get('fname');
+                let address = params.get('houseNo')+" "+ params.get('street');
+                let cc = params.get('ccNo');
+                let ccCode = params.get('ccCode');
+                let ccDate = params.get('ccMonth')+"/"+ params.get('ccYear');
+    
+                document.getElementById('name').innerHTML = name;
+                document.getElementById('address').innerHTML = address;
+                document.getElementById('cc').innerHTML = cc;
+                document.getElementById('ccDate').innerHTML = ccDate;
+            }
+        </script>
+</head>
+
+<body>
+    <div class="navBar">
+        <div class="logo">
+            <a href="homePage.xhtml"><img src="./Assets/nfTeaMeme.svg" alt="Meme" style="width: 300px"></img>
+            </a>
+        </div>
+        <div class="links">
+            <a class="link" href="homePage.xhtml">Home</a>
+            <a class="link" href="menuPage.xhtml">Menu</a>
+            <a class="link" href="orderNowPage.xhtml">Order Now</a>
+            <a class="link" href="locationsPage.xhtml">Locations</a>
+            <a class="link" href="aboutUsPage.xhtml">About Us</a>
+            <a class="link" href="contactUsPage.xhtml">Contact Us</a>
+        </div>
+    </div>
+    <h1 class="corderConfirmation">Your Order Details:</h1>
+    <div>
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td id="name"></td>
+            </tr>
+            <tr>
+                <td>Total:</td>
+                <td id="total"></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td id="address"></td>
+            </tr>
+            <tr>
+                <td>Credit Card:</td>
+                <td id="cc"></td>
+            </tr>
+            <tr>
+                <td>Credit Card Date:</td>
+                <td id="ccDate"></td>
+            </tr>
+        </table>
+
+    </div> <br/>
+    <footer>
+        <a class="footerLinks" href="contactUsPage.xhtml">Hours</a>
+        <a class="footerLinks" href="contactUsPage.xhtml">Contact Us</a>
+        <a class="footerLinks" href="contactUsPage.xhtml">Social Media</a>
+    </footer>
+</body>
+
+</html>

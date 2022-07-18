@@ -1,0 +1,90 @@
+<!DOCTYPE html
+    PUBLIC  "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>NF-Tea</title>
+    <link rel="stylesheet" href="aboutUsPage.css" type="text/css" />
+
+            <!-- Get info from url-->
+            <script>
+                window.onload = function() {
+                    let params = new URLSearchParams(location.search);
+                    let name = params.get('lname')+", "+params.get('fname');
+                    let address = params.get('houseNo')+" "+ params.get('street')+" "+ params.get('city')+", "+ params.get('pCode');
+                    let education=params.get("education");
+                    let age=params.get("age");
+                    let position=params.get("position");
+        
+                    document.getElementById('name').innerHTML = name;
+                    document.getElementById('address').innerHTML = address;
+                    document.getElementById('age').innerHTML = age;
+                    document.getElementById('education').innerHTML = education;
+                    document.getElementById('position').innerHTML = position;
+                }
+            </script>
+</head>
+
+<body>
+
+    <!--Nav Bar-->
+    <div class="navBar">
+        <div class="logo">
+            <a href="homePage.xhtml"><img src="./Assets/nfTeaMeme.svg" alt="Meme" style="width: 300px"></img>
+            </a>
+        </div>
+        <div class="links">
+            <a class="link" href="homePage.xhtml">Home</a>
+            <a class="link" href="menuPage.xhtml">Menu</a>
+            <a class="link" href="orderNowPage.xhtml">Order Now</a>
+            <a class="link" href="locationsPage.xhtml">Locations</a>
+            <a class="link" href="aboutUsPage.xhtml">About Us</a>
+            <a class="link" href="contactUsPage.xhtml">Contact Us</a>
+        </div>
+    </div>
+
+    <!--Main Section-->
+    <div class="main">
+        <h1 class="corderConfirmation">Application Confirmation:</h1>
+        <div>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td id="name"></td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td id="age"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td id="address"></td>
+                </tr>
+                <tr>
+                    <td>Education:</td>
+                    <td id="education"></td>
+                </tr>
+                <tr>
+                    <td>Position:</td>
+                    <td id="position"></td>
+                </tr>
+                <tr>
+                    <td>Salary Requested:</td>
+                    <td id="position"></td>
+                </tr>
+            </table>
+    
+        </div> <br/>
+    </div>
+
+
+    <!--Footer-->
+    <footer>
+        <a class="footerLinks" href="#">Hours</a>
+        <a class="footerLinks" href="#">Contact Us</a>
+        <a class="footerLinks" href="#">Social Media</a>
+    </footer>
+</body>
+
+</html>

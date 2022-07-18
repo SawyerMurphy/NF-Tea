@@ -10,7 +10,7 @@
     <script src="menuPage.js"></script>
 </head>
 
-<body>
+<body onload="chosenItems();setTorD();">
     <div class="navBar">
         <div class="logo">
             <a href="homePage.xhtml"><img src="./Assets/nfTeaMeme.svg" alt="Meme" style="width: 300px"></img>
@@ -28,9 +28,9 @@
     <h1 class="orderNowTitle">Order Now</h1>
     <div class="orderNowOptions">
         <p>Please select an option before you can view your order.</p>
-        <input class="radioBtn" type="radio" id="takeout" value="takeout" name="tOrD" onclick="chosenItems();setTorD()" />
+        <input class="radioBtn" type="radio" id="takeout" value="takeout" name="tOrD" />
         <label for="takeOut">Takeout</label>
-        <input class="radioBtn" type="radio" id="delivery" value="delivery" name="tOrD" onclick="chosenItems();setTorD()" />
+        <input class="radioBtn" type="radio" id="delivery" value="delivery" name="tOrD" />
         <label for="delivery">Delivery</label>
     </div>
     <div class="orderForm">
@@ -40,7 +40,9 @@
         </div> <br />
         <div id="displayTotal" class="displayTotal">
         </div> <br />
-        <form action="actions.php" method="post">
+
+        <!--Would prefer to use post but don't want to setup a server for php-->
+        <form action="orderConfirmation.xhtml" method="get">
             <div>
                 <label>
                         First Name:  <input type="text" id="fname" name="fname"></input>
