@@ -303,5 +303,6 @@ function filter() {
             milkEle.style.display = "flex" ;
             document.getElementById("regTeasTitle").style.display = "flex" ;
             regEle.style.display = "flex" ;
+            break ;
     }
 }
